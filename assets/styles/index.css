@@ -235,24 +235,27 @@ body{
 
 .index--search--newJob{
     text-align: center;
-    padding-top: var(--general-padding-top);
+    padding-top: 8rem;
 }
 
 .index--search--newJob__title{
-    font-size: 2rem;
+    font-size: 2.4rem;
     font-weight: bold;
+    padding-bottom: 1rem;
 }
 
 .index--search--newJob__wrapper{
     display: flex;
     justify-content: center;
     margin-top: var(--general-margin-top);
+    padding-bottom: var(--general-padding-bottom);
 }
 
 .index--search--newJob--item{
     display: flex;
-    width: 40rem;
+    width: 30rem;
     text-align: left;
+    margin: 1rem;
 }
 
 .index--search--newJob--item--list{
@@ -276,10 +279,53 @@ body{
 
 .index--search--newJob--item--list__link{
     text-decoration: underline;
-    color: var(--primary-color);
     padding-top: 1rem;
     font-size: 1.4rem;
 }
+
+.index--search--newJob__button{
+    font-size: var(--central-font-size);
+    font-weight: bold;
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+/* Swiper styles */
+
+/* .index--search--newJob__swiper {
+    position: relative;
+    height: 100%;
+}
+
+.swiper {
+    width: 80%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-backface-hidden .swiper-slide{
+    margin-left: 8rem;
+}
+
+@media (max-width: 768px) {
+    .swiper-button-next {
+        right: 20px;
+        transform: rotate(90deg);
+    }
+
+    .swiper-button-prev {
+        left: 20px;
+        transform: rotate(90deg);
+}
+} */
 
 /* *about us section* */
 
