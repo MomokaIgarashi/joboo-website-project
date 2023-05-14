@@ -206,6 +206,7 @@ body{
     border: 1px solid #999999;
     box-sizing: border-box;
     color: #000;
+    font-size: var(--general-font-size);
     outline: none;
 }
 
@@ -219,6 +220,8 @@ body{
     border: none;
     background-color: var(--primary-color);
     color: #fff;
+    font-size: var(--general-font-size);
+    font-weight: bold;
     cursor: pointer;
 }
 
@@ -518,12 +521,19 @@ body{
     background: var(--black);
     color: #a5a5a8;
     font-size: var(--general-font-size);
-    font-weight: 300;
+    line-height: 2.4rem;
+    font-weight: bold;
+    padding: 3rem;
 }
 
 .footer__wrapper{
     width: 100%;
-    padding: var(--general-padding);
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__wrapper ul{
+    margin: 0 2rem;
 }
 
 .footer--left{
@@ -532,7 +542,7 @@ body{
 
 .footer--left__image{
     width: 12rem;
-    height: auto;
+    height: fit-content;
 }
 
 .footer--right{
@@ -565,6 +575,7 @@ body{
 .footer--bottom ul{
     position: absolute;
     bottom: 0;
+    right: 10%;
 }
 
 @media screen and (max-width:768px) {
@@ -614,6 +625,16 @@ body{
         display: block;
     }
 
+    .search-form-010{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .index--search--newJob__wrapper{
+        flex-direction: column;
+        align-items: center;
+    }
+
     .index--vorteile{
         display: block;
     }
@@ -626,6 +647,10 @@ body{
     }
 
     /* Footer section */
+
+    .footer__wrapper{
+        flex-direction: column;
+    }
 
     .footer--left{
         display: block;
