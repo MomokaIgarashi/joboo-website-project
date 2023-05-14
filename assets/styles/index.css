@@ -275,15 +275,39 @@ body{
     font-size: 2rem;
     font-weight: bold;
     text-decoration: underline;
+    margin-left: 1rem;
 }
 
 .index--vorteile--list{
-    margin-top: var(--general-margin-top);
+    margin-top: 1.6rem;
 }
 
-.index--vorteile--list li{
+.index--vorteile--list li {
     font-size: var(--general-font-size);
     line-height: 3rem;
+    position: relative;
+    padding-left: 1.5em;
+}
+
+/* .index--vorteile--list li::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f058';
+    color: var(--primary-color);
+    font-weight: 900;
+    position: absolute;
+    left: 0;
+} */
+
+.index--vorteile--list li::before {
+  position: relative;
+  /* top: -2px; */
+  left: -1rem;
+  display: inline-block;
+  width: 0.8rem;
+  height: 0.8rem;
+  content: '';
+  border-radius: 100%;
+  background: var(--primary-color);
 }
 
 /* So gehts section */
