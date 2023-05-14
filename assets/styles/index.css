@@ -515,6 +515,11 @@ body{
     font-size: 1.6rem;
 }
 
+.index--register button:hover{
+    background-color: var(--accent-color);
+    color: var(--primary-color);
+}
+
 /* *Footer* */
 
 .footer__container{
@@ -597,7 +602,8 @@ body{
     /* Counter section */
 
     .index--counter--item{
-        display: block;
+        flex-direction: column;
+        align-items: center;
     }
 
     /* Video section */
@@ -608,15 +614,35 @@ body{
     }
 
     .index--video--image__main{
-        width: 40vw;
+        width: 80vw;
+        top: 27%;
+        left: 10%;
     }
 
-    .index--video--image__audio{
+    .index--video--audio{
         display: none;
     }
 
+    /* Counter section */
+
+    .index--counter{
+        padding-top: 0;
+    }
+
+    .index--counter--item__icon{
+        font-size: 5vw;
+        margin-bottom: 3vw;
+    }
+
     .index--counter--item__number{
-        font-size: 1vw;
+        font-size: 4.2vw;
+        margin-left: 0;
+    }
+
+    .index--counter--item__title{
+        font-size: 3vw;
+        line-height: 5vw;
+        margin-left: 0;
     }
 
     /* Search section */
@@ -630,13 +656,59 @@ body{
         align-items: center;
     }
 
+    .search-form-010 button{
+        width: 90vw;
+        margin-top: 5vw;
+    }
+
     .index--search--newJob__wrapper{
         flex-direction: column;
         align-items: center;
     }
 
+    .search-form-010 label{
+        width: 85vw;
+        margin: 3vw;
+    }
+
+    /* Vorteile section */
+
     .index--vorteile{
         display: block;
+    }
+
+    .index--vorteile--list{
+        margin-bottom: 7vw;
+    }
+
+    /* About us section */
+
+    .index--aboutUs__title{
+        font-size: 6vw;
+    }
+
+    .index--aboutUs p{
+        margin: 2.5vw;
+    }
+
+    /* Icon section */
+
+    .index--icons__image{
+        width: 90vw;
+    }
+
+    .index--vorteile__wrapper{
+        margin: 2.5vw;
+    }
+
+    /* Customers section */
+
+    .index--customers__title{
+        font-size: 6vw;
+    }
+
+    .index--customers__image{
+        width: 95vw;
     }
 
     /* Reviewer section */
@@ -646,10 +718,39 @@ body{
         align-items: center;
     }
 
+    .index--reviews--item__text{
+        text-align: center;
+    }
+
+    /* Account Register section */
+
+    .index--register__title{
+        font-size: 4vw;
+        color: var(--secondary-color);
+        line-height: 6vw;
+        padding-bottom: 3vw;
+    }
+
+    .index--register__text{
+        font-size: 3.2vw;
+        font-weight: 400;
+    }
+
+    .index--register__inner{
+        text-align: inherit;
+        width: 50vw;
+        top: 40%;
+        left: 7%;
+    }
+
     /* Footer section */
 
     .footer__wrapper{
         flex-direction: column;
+    }
+
+    .footer__wrapper ul{
+        margin: 4vw 0;
     }
 
     .footer--left{
@@ -662,6 +763,12 @@ body{
 
 .drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before{
     height: 3px!important;
+}
+
+.drawer-container{
+    height: 14vw;
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
 }
 
 /* .drawer-hamburger-icon:after, .drawer-hamburger-icon:before{
