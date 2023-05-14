@@ -124,12 +124,24 @@ body{
     left: 35%;
 }
 
-.index--video--image__audio{
-    width: 13rem;
-    height: auto;
+.index--video--audio{
+    display: flex;
     position: absolute;
-    top: 85%;
-    left: 80%;
+    top: 92%;
+    left: 87%;
+}
+
+.index--video--audio__text{
+    color: var(--secondary-color);
+    font-size: var(--general-font-size);
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.index--video--audio__icon{
+    height: auto;
+    line-height: 5rem;
+    margin-top: 0.7rem;
 }
 
 /* *Counter section* */
