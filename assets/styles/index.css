@@ -331,6 +331,11 @@ body{
 
 /* Vorteile Section */
 
+.index--vorteile{
+    display: flex;
+    justify-content: center;
+}
+
 .index--vorteile__wrapper{
     margin: var(--general-margin);
 }
@@ -365,14 +370,48 @@ body{
 
 /* So gehts section */
 
+.index--soGehts{
+    position: relative;
+}
+
 .index--soGehts__image{
     width: 100%;
     height: auto;
 }
 
-.index--vorteile{
+.index--soGehts--caption{
+    position: absolute;
     display: flex;
-    justify-content: center;
+    top: 50%;
+    left: 25%;
+}
+
+.index--soGehts--caption__title{
+    font-size: 4rem;
+    font-weight: bold;
+    color: var(--secondary-color);
+    text-shadow: -2px 2px #000000;
+}
+
+.index--soGehts--caption__icon{
+    font-size: 5rem;
+    margin-left: 1rem;
+    text-shadow: -2px 2px #FFFFFF;
+}
+
+.index--soGehts--caption__link{
+    font-size: var(--central-font-size);
+    font-weight: bold;
+    position: absolute;
+    top: 70%;
+    left: 22.5%;
+    text-align: center;
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.index--soGehts--caption__link:hover{
+    color: var(--secondary-color);
 }
 
 /* *Customer Section* */
