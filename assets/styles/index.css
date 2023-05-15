@@ -124,11 +124,21 @@ body{
     left: 35%;
 }
 
+.index--video--image__icon{
+    width: 12rem;
+    height: fit-content;
+    position: absolute;
+    top: 12%;
+    right: 1%;
+}
+
 .index--video--audio{
     display: flex;
     position: absolute;
-    top: 92%;
-    left: 87%;
+    /* top: 92%;
+    left: 87%; */
+    bottom: 5%;
+    right: 1%;
 }
 
 .index--video--audio__text{
@@ -605,13 +615,20 @@ body{
     }
 
     .index--video--image__main{
-        width: 80vw;
-        top: 27%;
-        left: 10%;
+        width: 65vw;
+        top: 35%;
+        left: 20%;
+    }
+
+    .index--video--image__icon{
+        width: 15vw;
+        top: 5%;
+        right: 0;
     }
 
     .index--video--audio{
-        display: none;
+        bottom: 2%;
+        right: 2%;
     }
 
     /* Counter section */
@@ -680,6 +697,27 @@ body{
 
     .index--aboutUs p{
         margin: 2.5vw;
+    }
+
+    /* So Geths section */
+
+    .index--soGehts--caption{
+        left: 7%;
+    }
+
+    .index--soGehts--caption__title{
+        font-size: 7vw;
+    }
+
+    .index--soGehts--caption__icon{
+        font-size: 8vw;
+    }
+
+    .index--soGehts--caption__link{
+        font-size: 3.6vw;
+        text-align: left;
+        top: 62%;
+        left: 7%;
     }
 
     /* Icon section */
