@@ -200,8 +200,8 @@ body{
 
 .search-form-010 input {
     width: 100%;
-    height: 34px;
-    padding: 1px 5px 1px 8px;
+    height: 4rem;
+    padding: 1rem;
     border: 1px solid #999999;
     box-sizing: border-box;
     color: #000;
@@ -215,7 +215,7 @@ body{
     align-items: center;
     width: 30%;
     max-width: 140px;
-    height: 34px;
+    height: 4.4rem;
     border: none;
     background-color: var(--primary-color);
     color: #fff;
@@ -281,6 +281,7 @@ body{
 
 .index--search--newJob--item--list__link{
     text-decoration: underline;
+    color: #ff1e00;
     padding-top: 1rem;
     font-size: 1.4rem;
 }
@@ -337,7 +338,6 @@ body{
 .index--vorteile__title{
     font-size: 2rem;
     font-weight: bold;
-    text-decoration: underline;
     margin-left: 1rem;
 }
 
@@ -352,18 +352,8 @@ body{
     padding-left: 1.5em;
 }
 
-/* .index--vorteile--list li::before {
-    font-family: "Font Awesome 5 Free";
-    content: '\f058';
-    color: var(--primary-color);
-    font-weight: 900;
-    position: absolute;
-    left: 0;
-} */
-
 .index--vorteile--list li::before {
   position: relative;
-  /* top: -2px; */
   left: -1rem;
   display: inline-block;
   width: 0.8rem;
