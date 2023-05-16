@@ -4,6 +4,7 @@
     --black: #1b1c21;
     --white: #fff;
     --gray: #f5f5f5;
+    --darkgray:#6c757d;
     --font-black:#212529;
     
     /*Color Style Guide*/
@@ -65,6 +66,7 @@ body{
     position: fixed;
     top: 0;
     width: 100%;
+    height: 7rem;
     background-color: var(--secondary-color);
     font-size: var(--central-font-size);
     font-weight: 300;
@@ -75,11 +77,6 @@ body{
 .header--pc__wrapper{
     display: flex;
     /* justify-content: flex-start; */
-}
-
-.header--pc__other{
-    display: flex;
-    justify-content: flex-end;
 }
 
 .header--pc__image{
@@ -96,17 +93,49 @@ body{
     margin: 0 2rem;
 }
 
-/* .header--pc__button{
-    margin-top: 2.4rem;
-    margin-right: 2rem;
+.header--pc--list__item a:hover{
+    color: var(--primary-color);
     text-decoration: underline;
+}
+
+.header--list__underline{
+    text-decoration: underline;
+    color: var(--primary-color);
+}
+
+.header--pc--list--second{
+    padding: 1rem!important;
+    margin-top: 1rem!important;
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12)!important;
+}
+
+.header--pc--list--second__item{
+    margin: 2rem 0!important;
+    font-size: var(--general-font-size);
+}
+
+.header--pc__other{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2.4rem;
+}
+
+.header--pc__other a:hover{
+    color: var(--primary-color);
+    text-decoration: underline;
+}
+
+.header--pc__button{
+    margin-right: 2rem;
+    color: var(--primary-color);
+    /* text-decoration: underline; */
 }
 
 .header--pc__button:hover{
     color: var(--primary-color);
-} */
+}
 
-.header--pc__button{
+/* .header--pc__button{
     padding: 1rem;
     border-radius: 1rem;
     background-color: var(--primary-color);
@@ -115,15 +144,18 @@ body{
     margin-top: 2rem;
     height: fit-content;
     font-size: 1.6rem;
+} */
+
+.header--pc__account{
+    font-size: 2rem;
+    margin-right: 0.5rem;
 }
 
 .header--pc__arbeitgeber{
-    margin-top: 3rem;
     margin-left: 2rem;
     margin-right: 2rem;
     text-decoration: underline;
 }
-
 
 /* *Video Section* */
 
@@ -152,7 +184,7 @@ body{
     width: 12rem;
     height: fit-content;
     position: absolute;
-    top: 12%;
+    top: 17%;
     right: 1%;
 }
 
@@ -234,7 +266,7 @@ body{
 
 .search-form-010 input {
     width: 100%;
-    height: 4rem;
+    height: 44px;
     padding: 1rem;
     border: 1px solid #999999;
     box-sizing: border-box;
@@ -541,8 +573,9 @@ body{
 }
 
 .index--register button:hover{
-    background-color: var(--accent-color);
-    color: var(--primary-color);
+    /* background-color: var(--accent-color); */
+    /* color: var(--primary-color); */
+    color: var(--black);
 }
 
 /* *Footer* */
@@ -600,10 +633,18 @@ body{
     padding-top: 5rem;
 }
 
+@media screen and (max-width:1250px) {
+
+}
+
 @media screen and (max-width:768px) {
 
     .pc--display{
         display: none;
+    }
+
+    .sp--display{
+        display: inherit;
     }
 
     .header--sp{
@@ -623,14 +664,25 @@ body{
         margin-left: 4vw;
     }
 
-    .sp--display{
-        display: inherit;
+    .drawer-menu-item__border{
+        width: 16rem;
+        height: 1px;
+        background-color: var(--darkgray);
+        margin-top: 3vw;
     }
 
-    /* Video section */
+    .drawer-menu--list{
+        font-size: 3vw;
+        color: var(--black);
+        font-family: var(--font-family-sans-serif);
+        font-weight: 300;
+        margin-top: 3vw!important;
+        margin-left: 2vw;
+    }
 
-    .index--video video{
-        height: auto;
+    .drawer-dropdown-menu-item{
+        line-height: 3.5vw!important;
+        margin-top: 2vw;
     }
 
     /* Counter section */
@@ -644,7 +696,11 @@ body{
 
     .index--video{
         height: 80vw;
-        padding-top: 0;
+        padding-top: 12vw;
+    }
+
+    .index--video video{
+        height: auto;
     }
 
     .index--video--image__main{
@@ -655,7 +711,7 @@ body{
 
     .index--video--image__icon{
         width: 15vw;
-        top: 5%;
+        top: 17.5%;
         right: 0;
     }
 
@@ -698,8 +754,9 @@ body{
     }
 
     .search-form-010 button{
-        width: 90vw;
+        width: 85vw;
         margin-top: 5vw;
+        max-width: none;
     }
 
     .index--search--newJob__wrapper{
@@ -726,10 +783,11 @@ body{
 
     .index--aboutUs__title{
         font-size: 6vw;
+        margin: 0 5vw;
     }
 
     .index--aboutUs p{
-        margin: 2.5vw;
+        margin: 2.5vw 5vw;
     }
 
     /* So Geths section */
@@ -855,7 +913,14 @@ body{
 
 .drawer-menu-item{
     font-size: 4vw!important;
+    color: var(--black)!important;
+    font-family: var(--font-family-sans-serif)!important;
+    font-weight: 300;
 }
+
+/* li.drawer-menu--list{
+    font-family: var(--font-family-sans-serif)!important;
+} */
 
 .drawer-container{
     height: 14vw;
