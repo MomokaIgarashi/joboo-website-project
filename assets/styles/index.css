@@ -11,8 +11,6 @@
     --primary-color: var(--red);
     --secondary-color: var(--white);
     --accent-color: var(--gray);
-    --button-1: var(--orange);
-    --button-2: var(--green);
 
     /* Font size */
     --general-font-size: 1.4rem;
@@ -29,8 +27,6 @@
     --general-padding: 3% 10%;
     --general-padding-top: 3rem;
     --general-padding-bottom: 3rem;
-
-  
 }
 
 html {
@@ -135,17 +131,6 @@ body{
     color: var(--primary-color);
 }
 
-/* .header--pc__button{
-    padding: 1rem;
-    border-radius: 1rem;
-    background-color: var(--primary-color);
-    color: var(--secondary-color);
-    font-weight: bold;
-    margin-top: 2rem;
-    height: fit-content;
-    font-size: 1.6rem;
-} */
-
 .header--pc__account{
     font-size: 2rem;
     margin-right: 0.5rem;
@@ -209,6 +194,23 @@ body{
     position: absolute;
     top: 34%;
     left: 35%;
+}
+
+.fadeIn{
+    animation-name:fadeInAnime;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    opacity:0;
+}
+
+@keyframes fadeInAnime{
+    from {
+    opacity: 0;
+    }
+
+    to {
+    opacity: 1;
+    }
 }
 
 .index--video--image__icon{
