@@ -158,10 +158,22 @@
                 <div class="index--search--main">
                     <form action="#" class="search-form-010">
                         <label>
-                            <input type="text" placeholder="Was">
+                            <input type="text" list="wasJob" placeholder="Was">
+                            <datalist id="wasJob">
+                                <option value="Backend-Entwickler">
+                                <option value="Frontend-Entwickler">
+                                <option value="UX-Designer">
+                                <option value="Verkaufs- und Betriebspersonal">
+                            </datalist>
                         </label>
                         <label>
-                            <input type="text" placeholder="Wo">
+                            <input type="text" list="woJob" placeholder="Wo">
+                            <datalist id="woJob">
+                                <option value="40210 Düsseldorf">
+                                <option value="40230 Düsseldorf">
+                                <option value="10345 Frankfurt am Main">
+                                <option value="10545 Frankfurt am Main">
+                            </datalist>
                         </label>
                         <button type="submit">JOBS FINDEN</button>
                     </form>
