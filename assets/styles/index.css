@@ -24,7 +24,6 @@
     --general-margin: 5rem;
     --general-margin-top: 3rem;
     --general-margin-bottom: 1.5rem;
-    --general-padding: 3% 10%;
     --general-padding-top: 3rem;
     --general-padding-bottom: 3rem;
 }
@@ -188,8 +187,9 @@ body{
     width: 43rem;
     height: auto;
     position: absolute;
-    top: 34%;
-    left: 35%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .fadeIn{
@@ -737,8 +737,6 @@ body{
 
     .index--video--image__main{
         width: 65vw;
-        top: 35%;
-        left: 20%;
     }
 
     .index--video--image__icon{
@@ -979,8 +977,6 @@ body{
 
     .index--video--image__main{
         width: 35rem;
-        top: 30%;
-        left: 33%;
     }
 
     .index--video--image__icon{
@@ -1062,6 +1058,12 @@ body{
         padding: 1rem 3rem;
         margin-top: 2rem;
         font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width:1800px) {
+    .index--video--image__main{
+        width: 70rem;
     }
 }
 
