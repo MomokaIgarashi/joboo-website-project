@@ -222,8 +222,6 @@ body{
 .index--video--audio{
     display: flex;
     position: absolute;
-    /* top: 92%;
-    left: 87%; */
     bottom: 5%;
     right: 1%;
 }
@@ -713,8 +711,8 @@ body{
     }
 
     .drawer-dropdown-menu-item{
-        line-height: 3.5vw;
-        margin-top: 2vw;
+        line-height: 7vw;
+        font-size: 3.6vw;
     }
 
     /* Counter section */
