@@ -157,6 +157,37 @@ body{
     text-decoration: underline;
 }
 
+/* Header Drawer menu */
+
+.drawer-nav{
+    width: 100vw;
+}
+
+.drawer--right .drawer-nav{
+    right: -100vw;
+}
+
+.drawer-navbar .drawer-nav{
+    padding-top: 15vw;
+}
+
+.drawer-menu-item{
+    font-size: 4vw;
+    /* color: var(--black);
+    font-family: var(--font-family-sans-serif); */
+    font-weight: 300;
+}
+
+.drawer-container{
+    height: 14vw;
+    background-color: var(--secondary-color);
+    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
+}
+
+.drawer--navbarTopGutter{
+    padding-top: 0;
+}
+
 /* *Video Section* */
 
 .index--video{
@@ -665,23 +696,24 @@ body{
     }
 
     .drawer-menu-item__border{
-        width: 16rem;
+        width: 100vw;
         height: 1px;
         background-color: var(--darkgray);
         margin-top: 3vw;
     }
 
     .drawer-menu--list{
-        font-size: 3vw;
+        font-size: 4vw;
         color: var(--black);
         font-family: var(--font-family-sans-serif);
         font-weight: 300;
-        margin-top: 3vw!important;
+        margin-top: 3vw;
         margin-left: 2vw;
+        line-height: 7vw;
     }
 
     .drawer-dropdown-menu-item{
-        line-height: 3.5vw!important;
+        line-height: 3.5vw;
         margin-top: 2vw;
     }
 
@@ -896,42 +928,3 @@ body{
     }
 
 }
-
-/* Drawer menu */
-
-/* .drawer-nav{
-    width: 37.5rem!important;
-}
-
-.drawer--right .drawer-nav{
-    right: -37.5rem!important;
-} */
-
-.drawer-navbar .drawer-nav{
-    padding-top: 15vw!important;
-}
-
-.drawer-menu-item{
-    font-size: 4vw!important;
-    color: var(--black)!important;
-    font-family: var(--font-family-sans-serif)!important;
-    font-weight: 300;
-}
-
-/* li.drawer-menu--list{
-    font-family: var(--font-family-sans-serif)!important;
-} */
-
-.drawer-container{
-    height: 14vw;
-    background-color: var(--secondary-color);
-    box-shadow: 0 2px 5px 0 rgba(0,0,0,.16), 0 2px 10px 0 rgba(0,0,0,.12);
-}
-
-.drawer--navbarTopGutter{
-    padding-top: 0!important;
-}
-
-/* .drawer-hamburger-icon:after, .drawer-hamburger-icon:before{
-    top: -8px!important;
-} */
