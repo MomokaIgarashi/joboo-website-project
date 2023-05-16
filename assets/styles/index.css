@@ -713,6 +713,10 @@ body{
         font-size: 3.6vw;
     }
 
+    .drawer-hamburger{
+        padding: 14px .75rem 30px;
+    }
+
     /* Counter section */
 
     .index--counter--item{
