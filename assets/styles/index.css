@@ -556,6 +556,7 @@ body{
 
 .index--reviews--item__text{
     margin-top: 1rem;
+    text-align: center;
 }
 
 .index--reviews--item__name{
@@ -600,13 +601,12 @@ body{
     color: var(--secondary-color);
     font-weight: bold;
     margin-top: 3rem;
-    font-size: 1.6rem;
+    font-size: var(--central-font-size);
 }
 
 .index--register button:hover{
-    /* background-color: var(--accent-color); */
-    /* color: var(--primary-color); */
-    color: var(--black);
+    background-color: var(--accent-color); 
+    color: var(--primary-color);
 }
 
 /* *Footer* */
@@ -791,14 +791,18 @@ body{
         max-width: none;
     }
 
+    .search-form-010 label{
+        width: 85vw;
+        margin: 3vw;
+    }
+
     .index--search--newJob__wrapper{
         flex-direction: column;
         align-items: center;
     }
 
-    .search-form-010 label{
-        width: 85vw;
-        margin: 3vw;
+    .index--search--newJob--item__image{
+        width: 32vw;
     }
 
     /* Vorteile section */
@@ -870,10 +874,6 @@ body{
         align-items: center;
     }
 
-    .index--reviews--item__text{
-        text-align: center;
-    }
-
     /* Account Register section */
 
     .index--register__title{
@@ -927,3 +927,102 @@ body{
         text-align: center;
     }
 }
+
+@media screen and (min-width:769px) and ( max-width:1100px) {
+    
+    .header--pc--list li{
+        margin: 0 0.5rem;
+    }
+
+    .header--pc{
+        font-size: 1.2rem;
+    }
+
+    .index--video--image__main{
+        width: 35rem;
+        top: 30%;
+        left: 33%;
+    }
+
+    .index--video--image__icon{
+        width: 7rem;
+        top: 22%;
+        right: 1%;
+    }
+
+    .index--video--audio__text{
+        font-size: 1.2rem;
+    }
+
+    .index--counter--item__number{
+        font-size: 2rem;
+    }
+
+    .index--counter--item__title{
+        font-size: 1.2rem;
+        line-height: 2.4rem;
+    }
+
+    .index--counter--item__icon{
+        font-size: 2rem;
+        margin-top: 0;
+    }
+
+    .index--aboutUs__title{
+        font-size: 2rem;
+    }
+
+    .index--aboutUs p{
+        font-size: var(--general-font-size);
+    }
+
+    .index--vorteile__title{
+        font-size: var(--central-font-size);
+    }
+
+    .index--vorteile--list li{
+        font-size: 1.2rem;
+    }
+
+    .index--customers__title{
+        font-size: 2rem;
+    }
+
+    .footer__wrapper{
+        flex-direction: column;
+    }
+
+    .footer__wrapper ul{
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+
+    .footer--right__logo{
+        display: block;
+        margin-left: auto;
+    }
+}
+
+@media screen and (min-width:769px) and ( max-width:1300px) {
+    
+    .header--pc__button{
+        display: none;
+    }
+
+    .index--register__title{
+        font-size: 2rem;
+        line-height: 3.6rem;
+    }
+
+    .index--register__text{
+        font-size: 1.4rem;
+    }
+
+    .index--register button{
+        padding: 1rem 3rem;
+        margin-top: 2rem;
+        font-size: 1.2rem;
+    }
+}
+
