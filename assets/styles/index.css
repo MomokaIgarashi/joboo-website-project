@@ -194,7 +194,7 @@ body{
 
 .fadeIn{
     animation-name:fadeInAnime;
-    animation-duration:3s;
+    animation-duration:5s;
     animation-fill-mode:forwards;
     opacity:0;
 }
@@ -264,7 +264,7 @@ body{
 
 .index--counter--item__number{
     font-size: 3rem;
-    font-family: "Roboto";
+    font-family: Roboto !important;
     font-weight: bold;
     margin-left: 0.5rem;
 }
@@ -737,6 +737,7 @@ body{
 
     .index--video--image__main{
         width: 65vw;
+        left: 53%;
     }
 
     .index--video--image__icon{
@@ -792,6 +793,10 @@ body{
     .search-form-010 label{
         width: 85vw;
         margin: 3vw;
+    }
+
+    .index--search--newJob__title{
+        font-size: 5vw;
     }
 
     .index--search--newJob__wrapper{
@@ -931,6 +936,8 @@ body{
 
     .drawer-hamburger{
         width: 3rem;
+        height: 5rem;
+        margin-right: 1rem;
     }
 
     .index--search--newJob--item{
